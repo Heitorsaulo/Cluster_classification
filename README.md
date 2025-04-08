@@ -1,5 +1,5 @@
 # __Cluster_classification__
-Este projeto realiza análise de clustering em um conjunto de dados de câncer de mama, utilizando algoritmos não supervisionados (KMeans e Gaussian Mixture Models) para segmentar os dados em grupos. Um modelo de linguagem (LLM) é então utilizado para interpretar esses clusters e classificá-los como malignos ou benignos.
+Este projeto realiza análise de clustering em um conjunto de dados de câncer de mama, utilizando algoritmos não supervisionados (KMeans, Gaussian Mixture Models e Agglomerative) para segmentar os dados em grupos. Um modelo de linguagem (LLM) é então utilizado para interpretar esses clusters e classificá-los como malignos ou benignos.
 
 ##  __Integrantes do Grupo__
 
@@ -14,6 +14,7 @@ O projeto implementa duas abordagens de clustering:
 
  * KMeans - Breast_cancer_classification_kmeans.py
  * Gaussian Mixture Model (GMM) - Breast_cancer_gmm_classification.py
+ * Agglomerative clustering - Breast_cancer_agglomeration_classification.py
 
 Após o clustering, os dados são enviados para um modelo de linguagem (via API OpenAI) que analisa os grupos formados e os classifica como tumores malignos ou benignos, fornecendo justificativa para cada classificação.
 
@@ -23,6 +24,7 @@ Após o clustering, os dados são enviados para um modelo de linguagem (via API 
  * Avaliação da qualidade do clustering usando métricas como Adjusted Rand Index (ARI) e Normalized Mutual Information (NMI)
  * Pré-processamento de dados (codificação de variáveis categóricas, remoção de colunas altamente correlacionadas)
  * Visualização dos clusters formados
+ * Operação de clusterização com os seguintes algoritmos: Agglomerative, KMeans e GMM
 
 ##  Configuração e execução do projeto
 ### Instalação e Configuração 
@@ -56,4 +58,10 @@ Após o clustering, os dados são enviados para um modelo de linguagem (via API 
 1. Execute o seguinte comando:
     ```sh
     python .\Breast_cancer_gmm_classification.py 
+    ```
+    
+### Execução do algoritmo Agglomerative:
+1. Execute o seguinte comando:
+    ```sh
+    python .\Breast_cancer_agglomeration_classification.py 
     ```
