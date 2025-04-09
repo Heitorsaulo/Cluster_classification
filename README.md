@@ -10,7 +10,7 @@ Este projeto realiza análise de clustering em um conjunto de dados de câncer d
 - **Rômulo Menezes De Santana**
 
 ## Visão Geral do Projeto
-O projeto implementa duas abordagens de clustering:
+O projeto implementa três abordagens de clustering:
 
  * KMeans - Breast_cancer_classification_kmeans.py
  * Gaussian Mixture Model (GMM) - Breast_cancer_gmm_classification.py
